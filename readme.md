@@ -6,7 +6,7 @@ FitTrack is a web-based fitness tracking application designed to help users moni
 
 ## 🌐 Live Demo
 
-Check out the live version of the project here: [FitTrack Live Demo](#)
+Check out the live version of the project here: [FitTrack Live Demo](https://fitness-tracker-silk-mu.vercel.app/)
 
 ---
 
