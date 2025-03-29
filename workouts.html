@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts - FitTrack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/dumbbell.svg" alt="Dumbbell icon">
+                <h1>FitTrack</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li class="active"><a href="workouts.html">Workouts</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="stats.html">Statistics</a></li>
+            </ul>
+            <button class="btn-primary" id="sign-in-btn">Sign In</button>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <a href="index.html" class="back-link">
+                        <img src="images/arrow-left.svg" alt="Arrow icon">
+                        Back to Dashboard
+                    </a>
+                    <h1>Workouts</h1>
+                </div>
+                <button class="btn-primary" id="new-workout-btn">
+                    <img src="images/plus.svg" alt="Plus icon">
+                    New Workout
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Search and Filter -->
+        <div class="search-filter">
+            <div class="search-box">
+                <img src="images/search.svg" alt="Search icon">
+                <input type="text" placeholder="Search workouts...">
+            </div>
+            <button class="btn-outline" id="filter-btn">
+                <img src="images/filter.svg" alt="Filter icon">
+                Filter
+            </button>
+        </div>
+
+        <!-- Workout Categories -->
+        <div class="tabs">
+            <button class="tab active" data-category="all">All</button>
+            <button class="tab" data-category="strength">Strength</button>
+            <button class="tab" data-category="cardio">Cardio</button>
+            <button class="tab" data-category="hiit">HIIT</button>
+        </div>
+
+        <!-- Workout Grid -->
+        <div class="workout-grid" id="workout-grid">
+            <!-- Workouts will be added here via JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/dumbbell.svg" alt="Dumbbell icon">
+                <span>FitTrack</span>
+            </div>
+            <p>Track workouts. Set goals. Visualize progress.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+            <p class="copyright">© 2025 FitTrack. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="workouts.js"></script>
+</body>
+</html>

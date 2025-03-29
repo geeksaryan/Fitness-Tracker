@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - FitTrack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/dumbbell.svg" alt="Dumbbell icon">
+                <h1>FitTrack</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li class="active"><a href="stats.html">Statistics</a></li>
+            </ul>
+            <button class="btn-primary" id="sign-in-btn">Sign In</button>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <a href="index.html" class="back-link">
+                        <img src="images/arrow-left.svg" alt="Arrow icon">
+                        Back to Dashboard
+                    </a>
+                    <h1>Statistics</h1>
+                </div>
+                <div class="header-controls">
+                    <select id="time-period" class="select">
+                        <option value="week">Last Week</option>
+                        <option value="month" selected>Last Month</option>
+                        <option value="quarter">Last 3 Months</option>
+                        <option value="year">Last Year</option>
+                    </select>
+                    <button class="btn-outline" id="export-btn">
+                        <img src="images/download.svg" alt="Download icon">
+                        Export
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Stats Cards -->
+        <div class="stats-grid stats-grid-4">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <h3>Total Workouts</h3>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-value">24</div>
+                    <p class="stat-change positive">+15% from last month</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <h3>Workout Hours</h3>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-value">18.5</div>
+                    <p class="stat-change positive">+8% from last month</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <h3>Calories Burned</h3>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-value">8,240</div>
+                    <p class="stat-change positive">+12% from last month</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <h3>Avg. Workout</h3>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-value">46 min</div>
+                    <p class="stat-change negative">-5% from last month</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div class="charts-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Workout Activity</h3>
+                    <p>Your workout frequency over time</p>
+                </div>
+                <div class="card-content">
+                    <canvas id="activity-chart" height="300"></canvas>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3>Workout Distribution</h3>
+                    <p>Breakdown by workout type</p>
+                </div>
+                <div class="card-content">
+                    <canvas id="distribution-chart" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Metrics -->
+        <div class="card full-width">
+            <div class="card-header">
+                <h3>Performance Metrics</h3>
+                <p>Track your progress across different exercises</p>
+            </div>
+            <div class="card-content">
+                <div class="tabs">
+                    <button class="tab active" data-tab="strength">Strength</button>
+                    <button class="tab" data-tab="cardio">Cardio</button>
+                    <button class="tab" data-tab="body">Body</button>
+                </div>
+                
+                <div class="tab-content active" id="strength-metrics">
+                    <!-- Strength metrics will be added here via JavaScript -->
+                </div>
+                
+                <div class="tab-content" id="cardio-metrics">
+                    <!-- Cardio metrics will be added here via JavaScript -->
+                </div>
+                
+                <div class="tab-content" id="body-metrics">
+                    <!-- Body metrics will be added here via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/dumbbell.svg" alt="Dumbbell icon">
+                <span>FitTrack</span>
+            </div>
+            <p>Track workouts. Set goals. Visualize progress.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+            <p class="copyright">© 2025 FitTrack. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="stats.js"></script>
+</body>
+</html>
