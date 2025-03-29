@@ -25,6 +25,9 @@ Check out the live version of the project here: [FitTrack Live Demo](#)
 
 ![Statistics Screenshot](images/statistics.png)
 
+### Workout Page
+
+![Statistics Screenshot](images/workout.png)
 ---
 
 ## 🌟 Features
