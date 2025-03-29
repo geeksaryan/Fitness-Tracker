@@ -12,7 +12,7 @@ const workoutData = [
         category: "Strength",
         duration: 45,
         exercises: 8,
-        image: "images/workout-upper-body.jpg"
+        image: "https://i.ytimg.com/vi/acp77RhVzMM/maxresdefault.jpg"
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const workoutData = [
         category: "Cardio",
         duration: 30,
         exercises: 1,
-        image: "images/workout-running.jpg"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnz2KYVfXA54PJ-fjdb1msyr7uL6KGkWKZjQ&s"
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ const workoutData = [
         category: "HIIT",
         duration: 25,
         exercises: 12,
-        image: "images/workout-hiit.jpg"
+        image: "https://www.jiomart.com/images/product/original/rvoijygc98/beatxp-glideheal-shiatsu-massager-with-infrared-heat-therapy-full-body-massager-with-8-kneading-rollers-for-shoulder-neck-back-muscle-pain-relief-with-type-c-charging-1-year-warranty-grey-product-images-orvoijygc98-p608385309-0-202403061901.jpg?im=Resize=(420,420)"
     },
     {
         id: 4,
@@ -36,7 +36,7 @@ const workoutData = [
         category: "Strength",
         duration: 50,
         exercises: 7,
-        image: "images/workout-legs.jpg"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4Bk1A-NvVmQzRjOvXj_HRevY0-Tu7MYnQA&s"
     },
     {
         id: 5,
@@ -44,7 +44,7 @@ const workoutData = [
         category: "Strength",
         duration: 20,
         exercises: 6,
-        image: "images/workout-core.jpg"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjGVBbZG4w2ucXX3Xv3SmASiXmJpfqG0MdLA&s"
     },
     {
         id: 6,
@@ -52,7 +52,7 @@ const workoutData = [
         category: "Cardio",
         duration: 45,
         exercises: 1,
-        image: "images/workout-cycling.jpg"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLAT0ae8M9fydsgZ92hW71TIRaaqztet4z71oCeskc0AlZsxTkaOFVo-0zWlTIExTwbs&usqp=CAU"
     }
 ];
 

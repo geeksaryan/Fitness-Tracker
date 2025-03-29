@@ -167,7 +167,11 @@ img {
 .menu-toggle {
     display: none;
     flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .menu-toggle span {
@@ -230,21 +234,6 @@ img {
     display: flex;
     justify-content: center;
     gap: 1rem;
-}
-
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.25rem;
-    }
-    
-    .hero-content p {
-        font-size: 1rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 /* Section Styles */
@@ -994,10 +983,60 @@ footer p {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--background);
+        padding: 1rem 0;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
     }
-    
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0.75rem 0;
+    }
+
     .menu-toggle {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .hero-content h1 {
+        font-size: 2.25rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
     }
     
     .stats-grid {
@@ -1007,11 +1046,11 @@ footer p {
     .header-content {
         flex-direction: column;
         align-items: flex-start;
+        gap: 1rem;
     }
     
     .header-controls {
         width: 100%;
-        margin-top: 1rem;
     }
     
     .search-filter {
@@ -1020,6 +1059,17 @@ footer p {
     
     .search-box {
         max-width: none;
+    }
+    
+    .tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.5rem;
+    }
+    
+    .tab {
+        padding: 0.75rem 1rem;
     }
 }
 
